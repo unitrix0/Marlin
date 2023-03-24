@@ -1538,7 +1538,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, -7, -2.5 }
+#define NOZZLE_TO_PROBE_OFFSET { -45, 4, -2.5 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -1759,11 +1759,11 @@
 #define Y_BED_SIZE 360
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define X_MIN_POS 6.5
+#define Y_MIN_POS -10
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define X_MAX_POS X_BED_SIZE + X_MIN_POS
+#define Y_MAX_POS Y_BED_SIZE + Y_MIN_POS
 #define Z_MAX_POS 410
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
