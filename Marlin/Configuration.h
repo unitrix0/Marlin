@@ -1538,7 +1538,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, 4, -2.5 }
+#define NOZZLE_TO_PROBE_OFFSET { -46, 4, -1.59 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -1551,13 +1551,13 @@
 #define PROBING_MARGIN 20
 
 // X and Y axis travel speed (mm/min) between probes
-#define XY_PROBE_FEEDRATE (300*60)
+#define XY_PROBE_FEEDRATE (210*60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_FEEDRATE_FAST (250)
+#define Z_PROBE_FEEDRATE_FAST (350)
 
 // Feedrate (mm/min) for the "accurate" probe of each point
-#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST/2)
+#define Z_PROBE_FEEDRATE_SLOW (125)
 
 /**
  * Probe Activation Switch
