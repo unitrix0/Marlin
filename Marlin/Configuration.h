@@ -1538,7 +1538,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -46.5, 5.8, -1.59 }
+#define NOZZLE_TO_PROBE_OFFSET { -46.5, 5, -1.59 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
@@ -1755,11 +1755,11 @@
 // @section geometry
 
 // The size of the printable area
-#define X_BED_SIZE 360
+#define X_BED_SIZE 356
 #define Y_BED_SIZE 360
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS 6.5
+#define X_MIN_POS 0
 #define Y_MIN_POS -8
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE + X_MIN_POS
